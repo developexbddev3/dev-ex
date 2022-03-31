@@ -1,0 +1,36 @@
+
+body {
+    background: #eee;
+    font-size: 1rem;
+}
+img {
+    display: block;
+    width: 100%;
+}
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+p {
+    font-size: 18px;
+}
+
+:root {
+    --fave: #56a58f;
+    --fave_dark: #418572;
+}
+
+@import "components/top_nav";
+@import "components/banner_hero";
+@import "components/footer";
+
+@import "global";
+
+// pages
+
+@import "pages/home";
+@import "pages/services";
+@import "pages/about";
+@import "pages/contact";
+// @import "pages/training_details";

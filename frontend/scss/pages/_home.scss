@@ -1,0 +1,212 @@
+
+// service grid start 
+.service_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 994px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    grid-gap: 15px;
+    .service_box {
+        padding: 15px;
+        position: relative;
+        background: #fff;
+        padding-bottom: 80px;
+        transition: all 0.3s ease-in-out;
+        .service_banner {
+            img {
+                display: block;
+                width: 100%
+            }
+        }
+        .title {
+            color: var(--fave);
+            margin: 15px 0;
+            text-align: center;
+        }
+        .desc {
+            line-height: 1.5;
+            font-size: 16px;
+            padding-bottom: 10px;
+            color: #777;
+            font-style: italic;
+            text-align: center;
+        }
+        .g_serv {
+            padding: 10px;
+            background: var(--fave);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: #fff;
+                background: var(--fave_dark);
+                letter-spacing: 1px;
+            }
+        }
+
+        // service box hover
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+
+.upper_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box {
+        border: 1px solid #ddd;
+        padding: 50px 10px;
+        margin-top: -1px;
+        margin-left: -1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        color: var(--fave_dark);
+        // color: #204ecf;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        @media (max-width: 576px) {
+            padding: 30px 10px;
+        }
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            img {
+                display: unset;
+                width: 70px;
+            }
+        }
+        span {
+            display: block;
+            padding-top: 30px;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        &:hover {
+            background: #eee;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+// .231834 {
+.service_details_modal {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    @media (max-width: 994px) {
+        grid-template-columns: 1fr;
+    }
+    .aside {
+        padding: 30px 20px;
+        background: #231834;
+        color: #ddd;
+        .package {
+            display: flex;
+            .icon {
+                padding-right: 20px;
+                font-size: 40px;
+                min-width: 70px;
+            }
+        }
+    }
+    .content {
+        padding: 10px;
+        position: relative;
+        .desc_list {
+            list-style-type: disc;
+            margin-left: 22px;
+        } 
+    }
+
+    .service_modal_close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+}
+
+
+.training_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    @media (max-width: 994px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .training {
+        background: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: translateY(-5px);
+        }
+        .name {
+            padding: 15px 10px;
+            color: #222222;
+            font-size: 18px;
+            margin: 0;
+        }
+        .footer {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-weight: bold;
+                color: #222222;
+            }
+            .details {
+                color: var(--fave);
+            }
+        }
+    }
+}
+
+.client_grid {
+    display: flex;
+    gap: 20px;
+    .itm {
+        max-width: 200px;
+    }
+}
+
+
+.location_map {
+    padding-top: 80px;
+}

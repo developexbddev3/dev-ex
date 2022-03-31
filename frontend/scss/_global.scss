@@ -1,0 +1,121 @@
+.section_wrap {
+    padding: 50px 15px;
+}
+
+.section_header {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 15px;
+    .title {
+        font-weight: 700;
+        font-size: 40px;
+        color: #0f1217;
+        align-items: center;
+    }
+    .side_dash {
+        .title {
+            text-align: center;
+            font-size: 40px;; 
+            font-weight: 700;
+            color:#0f1217; 
+            letter-spacing:1px;
+            // text-transform: uppercase;
+        
+            display: grid;
+            grid-template-columns: 1fr max-content 1fr;
+            grid-template-rows: 27px 0;
+            grid-gap: 20px;
+            align-items: center;
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                border-top: 2px solid #418572;
+                border-bottom: 5px solid #418572;
+                height: 10px;
+            }
+            @media (max-width: 768px) {
+                display: block;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    max-width: 300px;
+                    border-top: 1px solid #418572;
+                    border-bottom: 2px solid #418572;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .desc {
+        font-weight: 500;
+        font-size: 18px;
+        color: #656668;
+        font-style: italic;
+    }
+}
+@media (max-width: 992px) {
+    .row_rev {
+        flex-flow: column-reverse;
+        gap: 40px;
+    }
+}
+
+// global button 
+.global_btn {
+    display: inline-block;
+    padding: 20px 30px;
+    background: #56a58f;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    &.sml {
+        padding: 10px 30px;
+    }
+    &:hover {
+        color: #fff;
+        background: #418572;
+    }
+}
+
+.social_link_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    &.center {
+        justify-content: center;
+    }
+}
+.social_btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0099cc;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+        color: #fff;
+    }
+    &.facebook {
+        background: #3b5998;
+    }
+    &.skype {
+        background: #00aff0;
+    }
+    &.whatsapp {
+        background: #00A884;
+    }
+    &.gmail {
+        background: #EA4335;
+    }
+}

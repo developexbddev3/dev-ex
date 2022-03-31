@@ -1,0 +1,29 @@
+
+.contact_icon_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .icon {
+        font-size: 40px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .info {
+        text-align: center;
+        .title {
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .txt {
+            font-size: 20px;
+            color: #666;
+        }
+    }
+}
